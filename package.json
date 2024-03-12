@@ -1,0 +1,21 @@
+{
+  "name": "cloud-demoapp",
+  "version": "1.0.0",
+  "description": "a demo app to highlight the importance of CI/CD pipelines",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/main/resources/static/css/styles.css -o ./target/classes/static/css/styles.css --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@tailus/themer": "^0.0.4",
+    "swiper": "^11.0.7"
+  }
+}
