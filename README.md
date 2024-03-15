@@ -28,7 +28,7 @@
 
 </p>
 
-## Overview
+## 🔍 Overview
 
 This project is aimed at automating the deployment process using Jenkins and AWS. It provides a seamless way to deploy applications by integrating Jenkins for continuous integration and delivery and leveraging AWS services for hosting and managing the application infrastructure.
 
@@ -36,7 +36,7 @@ This project is aimed at automating the deployment process using Jenkins and AWS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Built With
+## 🛠️ Built With
 
 This project was built using the following technologies:
 
@@ -50,34 +50,34 @@ This project was built using the following technologies:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Infrastructure
+## 🏗️ Infrastructure
 
 ![Jenkins Pipeline][jenkins-pipeline]
 
 Our journey starts when the developer pushes the code to the repository. A webhook triggers the Jenkins pipeline, which is responsible for:
 
-1. Checking out the code from the repository
-2. Building the application w/ Maven
-3. Running unit tests
-4. Generating checkstyle reports w/ Maven
-5. Running SonarQube analysis
-6. Checking if the code meets the quality gate
-7. Building the Docker image
-8. Pushing the Docker image to ECR
-9. Deploying the application to ECS w/ Fargate
+📥 Checking out the code from the repository
+🛠️ Building the application w/ Maven
+✅ Running unit tests
+📑 Generating checkstyle reports w/ Maven
+🔍 Running SonarQube analysis
+✔️ Checking if the code meets the quality gate
+🐳 Building the Docker image
+🗂️ Pushing the Docker image to ECR
+🚀 Deploying the application to ECS w/ Fargate
 
 <span style="color:green">P.S: A notification is sent to the developer either on success or failure of the pipeline in Microsoft Teams.</span>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Roadmap
+## 🗺️ Roadmap
 
 - [ ] Use Terraform for infrastructure as code
 - [ ] Add support for Kubernetes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+## 👥 Contributing
 
 Embracing collaboration is what fuels the heartbeat of the open-source community. Your contributions are not just welcomed but cherished.
 
