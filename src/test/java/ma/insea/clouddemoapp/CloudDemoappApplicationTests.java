@@ -19,9 +19,9 @@ class CloudDemoappApplicationTests {
 
 
 
-    @Test
-    public void testThatWillFail() {
-        assertEquals(1 , 2, "Dummy test failed as expected.");
-    }
+    // @Test
+    // public void testThatWillFail() {
+    //     assertEquals(1 , 2, "Dummy test failed as expected.");
+    // }
 
 }
