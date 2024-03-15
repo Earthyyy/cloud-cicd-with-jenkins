@@ -56,15 +56,15 @@ This project was built using the following technologies:
 
 Our journey starts when the developer pushes the code to the repository. A webhook triggers the Jenkins pipeline, which is responsible for:
 
-📥 Checking out the code from the repository
-🛠️ Building the application w/ Maven
-✅ Running unit tests
-📑 Generating checkstyle reports w/ Maven
-🔍 Running SonarQube analysis
-✔️ Checking if the code meets the quality gate
-🐳 Building the Docker image
-🗂️ Pushing the Docker image to ECR
-🚀 Deploying the application to ECS w/ Fargate
+- 📥 Checking out the code from the repository
+- 🛠️ Building the application w/ Maven
+- ✅ Running unit tests
+- 📑 Generating checkstyle reports w/ Maven
+- 🔍 Running SonarQube analysis
+- ✔️ Checking if the code meets the quality gate
+- 🐳 Building the Docker image
+- 🗂️ Pushing the Docker image to ECR
+- 🚀 Deploying the application to ECS w/ Fargate
 
 <span style="color:green">P.S: A notification is sent to the developer either on success or failure of the pipeline in Microsoft Teams.</span>
 
