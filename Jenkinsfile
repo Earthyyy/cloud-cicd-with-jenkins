@@ -14,7 +14,7 @@ pipeline {
     }
 
 	stages {
-		stage('fetch code') {
+		stage('checkout') {
 			steps {
 				git branch: 'main', url: 'https://github.com/Earthyyy/cloud-cicd-with-jenkins.git'
 			}
@@ -40,25 +40,15 @@ pipeline {
 			 }
 		 }
 
-		 stage('checkstyle analysis') {
+		 stage('checkstyle') {
 			 steps {
 				 sh 'mvn checkstyle:checkstyle'
 			 }
 		 }
 
 
-		 stage ('CODE ANALYSIS WITH CHECKSTYLE'){
-            steps {
-                sh 'mvn checkstyle:checkstyle'
-            }
-            post {
-                success {
-                    echo 'Generated Analysis Result'
-                }
-            }
-   		 }
 
-		stage('build && SonarQube analysis') {
+		stage('sonarqube code analysis') {
 				environment {
 				scannerHome = tool 'sonar4.7'
 				}
@@ -75,7 +65,7 @@ pipeline {
 				}
 		}
 
-		stage("Quality Gate") {
+		stage("quality gate") {
 				steps {
 					timeout(time: 1, unit: 'HOURS') {
 						waitForQualityGate abortPipeline: true
@@ -83,7 +73,7 @@ pipeline {
 				}
 		}
 
-		stage('Build App Image') {
+		stage('build app image') {
 			steps {
 			
 				script {
@@ -94,7 +84,7 @@ pipeline {
     
     	}
 
-		stage('Push App Image') {
+		stage('push to ecr') {
 			steps {
 				script {
 					docker.withRegistry( cloudappRegistry, registryCredential ) {
