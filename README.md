@@ -28,7 +28,7 @@
 
 </p>
 
-## Overview
+## 🔍 Overview
 
 This project is aimed at automating the deployment process using Jenkins and AWS. It provides a seamless way to deploy applications by integrating Jenkins for continuous integration and delivery and leveraging AWS services for hosting and managing the application infrastructure.
 
@@ -36,7 +36,7 @@ This project is aimed at automating the deployment process using Jenkins and AWS
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Built With
+## 🛠️ Built With
 
 This project was built using the following technologies:
 
@@ -50,7 +50,7 @@ This project was built using the following technologies:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Infrastructure
+## 🏗️ Infrastructure
 
 ![Jenkins Pipeline][jenkins-pipeline]
 
@@ -70,14 +70,14 @@ Our journey starts when the developer pushes the code to the repository. A webho
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Roadmap
+## 🗺️ Roadmap
 
 - [ ] Use Terraform for infrastructure as code
 - [ ] Add support for Kubernetes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+## 👥 Contributing
 
 Embracing collaboration is what fuels the heartbeat of the open-source community. Your contributions are not just welcomed but cherished.
 
