@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "@tailus/themer": "^0.0.4",
-    "swiper": "^11.0.7"
+    "swiper": "^12.1.2"
   }
 }
